@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /profile
+Disallow: /messages
+Disallow: /create
+Disallow: /notifications
+Disallow: /reset-password
+
+Sitemap: /sitemap.xml

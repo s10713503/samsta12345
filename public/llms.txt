@@ -1,0 +1,25 @@
+# Samsta
+
+> A quietly premium social network for sharing life's best moments— photos, reels, and stories— with Sam built in for captions, smart replies, career, and privacy.
+
+Samsta blends a calm social feed with Sam, an companion suite covering messaging, career tools, learning, travel, shopping, finance, and privacy.
+
+## Pages
+
+- [Welcome](/welcome): Landing page and sign-in entry.
+- [Sam Assistants](/assistants): assistants for writing, planning, learning, safety, and memory.
+- [Career Hub](/career/hub): Verified jobs, business opportunities, and career tools.
+- [Jobs](/career/jobs): Live job feed— full-time, remote, freelance, contract.
+- [Business Opportunities](/career/business): Curated partnerships, deals, and RFPs.
+- [Companies](/career/companies): Discover and follow companies on Samsta.
+- [Events](/career/events): Networking events and conferences.
+- [Portfolio](/career/portfolio): Public professional portfolios.
+- [Privacy Guardian](/privacy): cybersecurity center.
+- [Premium](/premium): Premium plans and features.
+
+## Optional
+
+- [Learn](/learn): Learning paths and flashcards.
+- [Travel](/travel): planned trips.
+- [Shopping](/shopping): curated wishlists.
+- [News](/news): Personalised news feed.
