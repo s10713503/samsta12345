@@ -10,8 +10,8 @@ safely — it can never be regenerated).
 | Keystore file | `samsta-release.keystore` |
 | Store type | PKCS12 |
 | Key alias | `samsta` |
-| Store password | `lMRNbdmF14Tl1bKZlqle` |
-| Key password | `lMRNbdmF14Tl1bKZlqle` |
+| Store password | Stored only in the private downloadable credential summary |
+| Key password | Stored only in the private downloadable credential summary |
 | Key algorithm | RSA 4096 |
 | Signature algorithm | SHA384withRSA |
 | Validity | 18 Aug 2026 → 10 Aug 2056 (10950 days) |
@@ -48,9 +48,9 @@ Play Console → Setup → App integrity to `assetlinks.json`.
 
 ```properties
 storeFile=/absolute/path/to/samsta-release.keystore
-storePassword=lMRNbdmF14Tl1bKZlqle
+storePassword=<private store password>
 keyAlias=samsta
-keyPassword=lMRNbdmF14Tl1bKZlqle
+keyPassword=<private key password>
 ```
 
 `android/app/build.gradle`:

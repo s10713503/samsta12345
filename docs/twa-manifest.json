@@ -11,7 +11,7 @@
   "webManifestUrl": "/manifest.webmanifest",
   "signingKey": {
     "path": "/absolute/path/to/samsta-release.keystore",
-    "alias": "<key alias>"
+    "alias": "samsta"
   },
   "appVersionName": "1.0.0",
   "appVersionCode": 1,
@@ -20,5 +20,5 @@
   "fallbackType": "customtabs",
   "enableNotifications": true,
   "isChromeOSOnly": false,
-  "fingerprint_note": "Release APK/AAB must report SHA-256 D6:E7:E4:00:EC:69:70:D1:22:AC:37:E0:9F:46:5B:BA:F2:4C:6C:A4:B8:39:CD:8F:06:B6:EF:88:19:2E:C0:95, matching public/.well-known/assetlinks.json"
+  "fingerprint_note": "Release APK/AAB upload key SHA-256: 56:7E:B2:28:37:F3:C8:B1:BA:FF:40:1C:2D:E2:6A:8B:DD:9F:44:4B:15:68:3E:63:01:B4:B9:96:71:D1:EC:2F. With Play App Signing, also add Play's app-signing SHA-256 to public/.well-known/assetlinks.json"
 }
