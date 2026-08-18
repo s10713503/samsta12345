@@ -5,6 +5,7 @@
       "namespace": "android_app",
       "package_name": "com.samsta.app",
       "sha256_cert_fingerprints": [
+        "86:D2:EC:AE:91:FA:1E:84:88:D3:60:39:46:F8:E5:C4:B4:86:3A:9C:C0:5C:B3:F1:18:6F:7A:27:84:08:1E:BA",
         "56:7E:B2:28:37:F3:C8:B1:BA:FF:40:1C:2D:E2:6A:8B:DD:9F:44:4B:15:68:3E:63:01:B4:B9:96:71:D1:EC:2F",
         "D6:E7:E4:00:EC:69:70:D1:22:AC:37:E0:9F:46:5B:BA:F2:4C:6C:A4:B8:39:CD:8F:06:B6:EF:88:19:2E:C0:95"
       ]
