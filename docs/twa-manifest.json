@@ -1,0 +1,24 @@
+{
+  "packageId": "com.samsta.app",
+  "host": "project--eb79b06d-16e3-4a39-acd5-84d4602b446f.lovable.app",
+  "name": "Samsta",
+  "launcherName": "Samsta",
+  "display": "standalone",
+  "orientation": "default",
+  "themeColor": "#000000",
+  "backgroundColor": "#000000",
+  "startUrl": "/",
+  "webManifestUrl": "/manifest.webmanifest",
+  "signingKey": {
+    "path": "/absolute/path/to/samsta-release.keystore",
+    "alias": "<key alias>"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "fallbackType": "customtabs",
+  "enableNotifications": true,
+  "isChromeOSOnly": false,
+  "fingerprint_note": "Release APK/AAB must report SHA-256 D6:E7:E4:00:EC:69:70:D1:22:AC:37:E0:9F:46:5B:BA:F2:4C:6C:A4:B8:39:CD:8F:06:B6:EF:88:19:2E:C0:95, matching public/.well-known/assetlinks.json"
+}
