@@ -14,6 +14,7 @@ import { Route as AgentRouteImport } from './routes/agent'
 import { Route as AssistantsRouteImport } from './routes/assistants'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as CareerRouteImport } from './routes/career'
+import { Route as ChildSafetyRouteImport } from './routes/child-safety'
 import { Route as ConnectionsRouteImport } from './routes/connections'
 import { Route as CreateRouteImport } from './routes/create'
 import { Route as EduReelsRouteImport } from './routes/edu-reels'
@@ -146,6 +147,11 @@ const AuthRoute = AuthRouteImport.update({
 const CareerRoute = CareerRouteImport.update({
   id: '/career',
   path: '/career',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChildSafetyRoute = ChildSafetyRouteImport.update({
+  id: '/child-safety',
+  path: '/child-safety',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConnectionsRoute = ConnectionsRouteImport.update({
@@ -697,6 +703,7 @@ export interface FileRoutesByFullPath {
   '/assistants': typeof AssistantsRouteWithChildren
   '/auth': typeof AuthRoute
   '/career': typeof CareerRouteWithChildren
+  '/child-safety': typeof ChildSafetyRoute
   '/connections': typeof ConnectionsRoute
   '/create': typeof CreateRoute
   '/edu-reels': typeof EduReelsRouteWithChildren
@@ -809,6 +816,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/child-safety': typeof ChildSafetyRoute
   '/connections': typeof ConnectionsRoute
   '/create': typeof CreateRoute
   '/edu-reels': typeof EduReelsRouteWithChildren
@@ -921,6 +929,7 @@ export interface FileRoutesById {
   '/assistants': typeof AssistantsRouteWithChildren
   '/auth': typeof AuthRoute
   '/career': typeof CareerRouteWithChildren
+  '/child-safety': typeof ChildSafetyRoute
   '/connections': typeof ConnectionsRoute
   '/create': typeof CreateRoute
   '/edu-reels': typeof EduReelsRouteWithChildren
@@ -1038,6 +1047,7 @@ export interface FileRouteTypes {
     | '/assistants'
     | '/auth'
     | '/career'
+    | '/child-safety'
     | '/connections'
     | '/create'
     | '/edu-reels'
@@ -1150,6 +1160,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/auth'
+    | '/child-safety'
     | '/connections'
     | '/create'
     | '/edu-reels'
@@ -1261,6 +1272,7 @@ export interface FileRouteTypes {
     | '/assistants'
     | '/auth'
     | '/career'
+    | '/child-safety'
     | '/connections'
     | '/create'
     | '/edu-reels'
@@ -1377,6 +1389,7 @@ export interface RootRouteChildren {
   AssistantsRoute: typeof AssistantsRouteWithChildren
   AuthRoute: typeof AuthRoute
   CareerRoute: typeof CareerRouteWithChildren
+  ChildSafetyRoute: typeof ChildSafetyRoute
   ConnectionsRoute: typeof ConnectionsRoute
   CreateRoute: typeof CreateRoute
   EduReelsRoute: typeof EduReelsRouteWithChildren
@@ -1459,6 +1472,13 @@ declare module '@tanstack/react-router' {
       path: '/career'
       fullPath: '/career'
       preLoaderRoute: typeof CareerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/child-safety': {
+      id: '/child-safety'
+      path: '/child-safety'
+      fullPath: '/child-safety'
+      preLoaderRoute: typeof ChildSafetyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/connections': {
@@ -2485,6 +2505,7 @@ const rootRouteChildren: RootRouteChildren = {
   AssistantsRoute: AssistantsRouteWithChildren,
   AuthRoute: AuthRoute,
   CareerRoute: CareerRouteWithChildren,
+  ChildSafetyRoute: ChildSafetyRoute,
   ConnectionsRoute: ConnectionsRoute,
   CreateRoute: CreateRoute,
   EduReelsRoute: EduReelsRouteWithChildren,
